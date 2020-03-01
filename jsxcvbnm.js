@@ -20,7 +20,7 @@ if(curriculum[i].section != undefined) {
 /////////////////////////////////////////////////////////////
 
 curriculumOutput += `<tr>
-<td><a href="/p/the-complete-2020-web-development.html?lecture=${Math.floor(Math.random() * 10000000)}" class="lecture-item" target="_blank">`;
+<td><a href="${watchPage}?lecture=${Math.floor(Math.random() * 10000000)}" class="lecture-item" target="_blank">`;
 
 // Here is if because later we can add other type of content by adding more statement may be switch (video, notes, coding excecise)
 
