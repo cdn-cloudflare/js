@@ -49,20 +49,20 @@ for(let i = 0; i < courseTitle.length; i++) {
 
 //Video Modals Generator
 
-// let lectures = document.querySelectorAll(".lecture-item");
-// let lectureLink = document.querySelectorAll(".tcdl a");
-// let lectureTitle = document.querySelectorAll(".lecture-title");
-// var modalsOutput = document.getElementById("videoModals");
+let lectures = document.querySelectorAll(".lecture-item");
+let lectureLink = document.querySelectorAll(".tcdl a");
+let lectureTitle = document.querySelectorAll(".lecture-title");
+var modalsOutput = document.getElementById("videoModals");
 
-// for(let i = 0; i < lectures.length; i++) {
-//     var modals = "<div class='modal' id='ex" + (i + 1) + "'>";
-//      modals += "<h3 class='lecture-title-modal'>" + lectureTitle[i].innerText + "</h3>";
-//      modals += "<div id='play' style='max-width:1080px;margin:0 auto;'>"
-//      modals += "<div style='position: relative;padding-bottom: 56.25%; height: 0; overflow: hidden;'>";
-//      modals += "<video style='position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;' class='video-js vjs-default-skin vjs-big-play-centered' id='play-video' class='video-js' controls preload='auto' width='100%' height='720' data-setup='{ \"playbackRates\": [0.5, 1, 1.5, 2] }'>";
-//      modals += "<source src='" + lectureLink[i] + "' type='video/mp4' />";
-//      modals += "<p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to aweb browser that<a href='https://videojs.com/html5-video-support/' target='_blank'></a> </p>";
-//      modals += "</video></div></div></div>";
-// }
+for(let i = 0; i < lectures.length; i++) {
+    var modals = "<div class='modal' id='ex" + (i + 1) + "'>";
+     modals += "<h3 class='lecture-title-modal'>" + lectureTitle[i].innerText + "</h3>";
+     modals += "<div id='play' style='max-width:1080px;margin:0 auto;'>"
+     modals += "<div style='position: relative;padding-bottom: 56.25%; height: 0; overflow: hidden;'>";
+     modals += "<video style='position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;' class='video-js vjs-default-skin vjs-big-play-centered' id='play-video' class='video-js' controls preload='auto' width='100%' height='720' data-setup='{ \"playbackRates\": [0.5, 1, 1.5, 2] }'>";
+     modals += "<source src='" + lectureLink[i] + "' type='video/mp4' />";
+     modals += "<p class='vjs-no-js'>To view this video please enable JavaScript, and consider upgrading to aweb browser that<a href='https://videojs.com/html5-video-support/' target='_blank'></a> </p>";
+     modals += "</video></div></div></div>";
+}
 
-// modalsOutput.innerHTML += modals;
+modalsOutput.innerHTML += modals;
