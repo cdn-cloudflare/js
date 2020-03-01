@@ -1,1 +1,1 @@
-var fileHost = "https://www.learningcrux.com";
+var host1 = "https://www.learningcrux.com";
