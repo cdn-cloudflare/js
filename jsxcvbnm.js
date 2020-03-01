@@ -1,7 +1,3 @@
-
-
-
-
 //Adding Lecture Rows to Curriculum Table Body
 
 var curriculumSection = document.getElementById("curriculumSection");
