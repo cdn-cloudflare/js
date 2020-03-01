@@ -1,1 +1,1 @@
-var host1 = "https://www.learningcrux.com";
+const host1 = "https://www.learningcrux.com";
