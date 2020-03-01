@@ -43,6 +43,7 @@ let courseTitle = document.querySelectorAll(".lecture-title");
 for(let i = 0; i < courseTitle.length; i++) {
     courseTitle[i].addEventListener("click", function(){
     localStorage.setItem("selectedLecture", this.innerHTML);
+    localStorage.setItem("selectedCourse", selectedCourse);
     });
 }
 
