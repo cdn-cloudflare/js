@@ -5,7 +5,7 @@ if ("" != localStorage.getItem("selectedLecture"))
     for (let e = 0; e < curriculum.length; e++)
         if (curriculum[e].title == localStorage.getItem("selectedLecture")) {
             var currentLectureLink = curriculum[e].link;
-            if (document.title = curriculum[e].title, void 0 !== curriculum[e].title && (currentLectureTitle.innerHTML = curriculum[e].title`), void 0 !== curriculum[e - 1]) {
+            if (document.title = curriculum[e].title, void 0 !== curriculum[e].title && (currentLectureTitle.innerHTML = curriculum[e].title, `), void 0 !== curriculum[e - 1]) {
                 LectureNavButton += `<span id="blog-pager-newer-link"><a class="blog-pager-newer-link" href="${watchPage}?lecture=${Math.floor(1e7*Math.random())}" id="Blog1_blog-pager-newer-link">&lt; Prev</a></span>`, lecturePager.innerHTML = LectureNavButton;
                 var prevLecture = curriculum[e - 1].title
             }
